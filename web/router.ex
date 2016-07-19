@@ -15,5 +15,6 @@ defmodule Blog.Router do
 
   scope "/", Blog do
     pipe_through :browser
+    resources "/posts", PostController
   end
 end

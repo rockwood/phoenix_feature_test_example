@@ -5,6 +5,7 @@ defmodule Blog.FeatureCase do
     quote do
       @moduletag :feature
       alias Blog.Repo
+      import AsyncHelpers
     end
   end
 

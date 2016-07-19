@@ -1,0 +1,10 @@
+<h2>Show post</h2>
+
+<h1 class="qa-post-title"><%= @post.title %></h1>
+
+<div class="qa-post-body">
+  <%= @post.body %>
+</div>
+
+<%= link "Edit", to: post_path(@conn, :edit, @post) %>
+<%= link "Back", to: post_path(@conn, :index) %>
