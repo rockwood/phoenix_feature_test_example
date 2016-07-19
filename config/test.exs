@@ -4,7 +4,7 @@ use Mix.Config
 # you can enable the server option below.
 config :blog, Blog.Endpoint,
   http: [port: 4001],
-  server: false
+  server: true
 
 # Print only warnings and errors during test
 config :logger, level: :warn
@@ -17,3 +17,7 @@ config :blog, Blog.Repo,
   database: "blog_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :hound, driver: "selenium", browser: "firefox"
+
+config :blog, sql_sandbox: true
